@@ -1,0 +1,23 @@
+.signupOtpForm{
+    border-bottom: 1.5px solid #000000;
+    display: inline-block;
+    font-family: 'Poppins';
+    height: 1px;
+    padding: 17px;
+    padding-bottom: 38px;
+    color: #B6B6B6;
+    position: relative;
+    left: 41px;
+
+}
+
+.placeholder{
+border: none;
+box-shadow: none;
+position: relative;
+left: -30px;
+top: 10px;
+background: border-box;
+font-weight: 700;
+width: 300px;
+}

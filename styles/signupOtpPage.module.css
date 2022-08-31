@@ -1,0 +1,68 @@
+.signupContainer{
+    /* background-color: red; */
+    height: 550px;
+    text-align: center;
+    width: 428px;
+    padding: 26px;
+}
+
+.otpContent {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    color: #161622;
+    padding: 30px;
+}
+
+.signupOtpForm{
+    border-bottom: 1px solid #000000;
+    display: inline-block;
+    font-family: 'Poppins';
+    font-weight: 400;
+    height: 1px;
+    padding-bottom: 36px;
+    color: #B6B6B6;
+
+}
+
+.signupOtpForm input{
+    border: none;
+}
+
+.signupOtpForm input:hover{
+    border: none;
+}
+
+.buttonVerifyCode {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #161622;
+    position: relative;
+    width: 146px;
+    /* margin: 4px; */
+    height: 36px;
+    /* left: 38px; */
+    top: 109px;
+    background: #AFEEEE;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer{
+    position: absolute;
+    /* width: 188px; */
+    /* height: 99px; */
+    left: 121px;
+    top: 797px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #161622;
+} 

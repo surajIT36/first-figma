@@ -1,0 +1,65 @@
+.sliderContainer {
+    position: absolute;
+    width: 428px;
+    height: 253px;
+    left: 0px;
+    top: 0px;
+}
+
+/* Sale of the season */
+
+.firstslideheading {
+    position: relative;
+    width: 186px;
+    height: 31px;
+    left: -11px;
+    top: -94px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.firstslidetitle {
+    position: absolute;
+    width: 147px;
+    height: 54px;
+    left: -7px;
+    top: -36px;
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+.firstslideoffer {
+    position: absolute;
+    width: 276px;
+    height: 45px;
+    left: 0px;
+    bottom: 11px;
+    /* top: 33px; */
+    background: #AFEEEE;
+    border-radius: 20px;
+}
+
+.offer{
+    position: absolute;
+    width: 246px;
+    height: 24px;
+    left: 22px;
+    top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #161622;
+}

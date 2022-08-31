@@ -1,107 +1,45 @@
 
-  .footer {
-    position: absolute;
-    width: 428px;
-    height: 1423px;
-    left: 0px;
+.footer{
     background: #161622;
-    /* top: 3683px; */
-  }
-  
-.heading{
-    position: absolute;
-    width: 316px;
-    height: 66px;
-    left: 56px;
-    top: 56px;
-    background: #AFEEEE;
+    padding: 46px;
+    width: 428px;
+    height: 200vh;
 }
-.SELFMADE{
-    position: absolute;
-    width: 184px;
-    height: 54px;
-    left: 40px;
-    top: 5px;
+.heading {
+    background: #AFEEEE;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 36px;
+    color: #F170D3;
+}
+.footerLink{ 
+    font-size: 16px;
+    line-height: 15px;
+    color: #FFFFFF;
+} 
+
+.footerHeading{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-    color: #F170D3;
-}
-
-.Vector{
-    position: absolute;
-    left: 110.46%;
-    right: 20.79%;
-    top: 11.44%;
-    /* bottom: 25.73%; */
-    /* background: #161622; */
-}
-
-.footerHeading{
-    position: absolute;
-    /* width: 211px; */
-    /* height: 30px; */
-    /* font-family: 'Poppins'; */
-    left: 56px;
-    top: 152px;
-    font-style: normal;
-    font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
     color: #20C6C6;
 }
 
-.footerLink{
-    /* position: absolute; */
-    /* width: 109px; */
-    /* height: 14px; */
-    left: 56px;
-    /* top: 3973px; */
-    /* font-family: 'Poppins'; */
-    font-style: normal;
-    font-weight: 700;
-    /* font-size: 16px; */
-    line-height: 15px;
-    color: #FFFFFF;
-}
-
-.footerContent{
-    position: absolute;
-    width: 341px;
-    height: 270px;
-    left: 56px;
-    top: 814px;
-    /* font-family: 'Poppins'; */
+.footerContent {
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: #FFFFFF;
-}
+    padding: 14px;
+    width: 365px;
+} 
 
-.footerIcon{
-    position: absolute;
-    width: 256px;
-    height: 256px;
-    left: 86px;
-    top: 1060px;
-    background: url(/google-play-badge-1.png);
+.footerSocialIcon{
+    position: relative;
+    left: 44px;
+    top: -135px;
+    margin: 8px;
 }
-
-.footerPara {
-    position: absolute;
-    width: 320px;
-    height: 60px;
-    left: 56px;
-    top: 1340px;
-    /* font-family: 'Poppins'; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
