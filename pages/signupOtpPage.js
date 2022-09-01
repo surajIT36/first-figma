@@ -33,7 +33,7 @@ const signupOtp = () => {
                         id="inputPassword5"
                         placeholder='Enter otp'
                         aria-describedby="passwordHelpBlock"
-                        style={{ boxShadow: "none", boxShadow: "none", position: "relative", left: "-12px" }}
+                        style={{boxShadow: "none", position: "relative", left: "-12px" }}
                     />
                     <Button variant="primary" className={styles.buttonVerifyCode}>Verify Code</Button>{' '}
                     <p className={styles.footer}>Didn’t  get OTP? Resend</p>

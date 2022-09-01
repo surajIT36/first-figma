@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 const newsLetter =() => {
   return (
-    <Container fluid="md">
+    <Container fluid="md" style={{margin:"0px"}}>
       <Row>
         <Col style={{padding:"0px"}}>
         <div className={styles.container}>

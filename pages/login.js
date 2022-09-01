@@ -1,23 +1,18 @@
-import Signupheader from '../components/signupheader';
-import Form from 'react-bootstrap/Form';
-import styles from '../styles/signup.module.css';
-import Button from 'react-bootstrap/Button';
+import Loginheader from '../components/loginheader';
 import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer';
+import Form from 'react-bootstrap/Form';
+import styles from '../styles/login.module.css';
+import Button from 'react-bootstrap/Button';
+import Link from 'next/link';
 
-const signup = () => {
+const login = () => {
     return(
         <>
-        <Signupheader />
-            <div style={{ width: "428px" }}>
+        <Loginheader />
+
+        <div style={{ width: "428px",height: "380px"}}>
                 <Form>
-                    <div className={styles.signupOtpForm}>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Control type="email" placeholder="Email" required className={styles.placeholder} 
-                            style={{boxShadow: "none",background: "border-box"}} />
-                            <span className={styles.underline}></span>
-                        </Form.Group>
-                    </div>
 
                     <div className={styles.signupOtpForm}>
                         <Form.Group className="mb-3" controlId="formBasicUsername">
@@ -35,22 +30,21 @@ const signup = () => {
                         </Form.Group>
                     </div>
 
-                    <div className={styles.signupOtpForm}>
-                        <Form.Group className="mb-3" controlId="formBasicConformPassword">
-                            <Form.Control type="password" placeholder="Conform Password" required className={styles.placeholder}
-                            style={{boxShadow: "none",background: "border-box"}}  />
-                            <span className={styles.underline}></span>
-                        </Form.Group>
+                    <div>
+                        <ul>
+                            <li style={{listStyle:"none"}}>
+                                <Link href="/forgetPassword">
+                                    <a 
+                                    style={{textDecoration:"none",fontFamily:'Poppins',color:"#F170D3",
+                                    fontWeight:700,fontSize:"19px",lineHeight:"16px",position:"absolute",
+                                    left:"211px"
+                                    }}>Forget Password</a>
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div style={{display:"flex",padding:"30px",width:"393px"}} >
-                    <Form.Group controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox"  /> 
-                        <span style={{position:"relative",bottom:"30px",left:"37px"}}>By signing in i agree with <span style={{color:"#F170D3"}} >terms and condition</span></span> 
-                    </Form.Group>
-                    </div>
-
-                    <div style={{textAlign:"center",fontFamily: "Poppins",height:"69px",position:"relative",top: "-9px"}}>
+                    <div style={{textAlign:"center",fontFamily: "Poppins",height:"69px",position:"relative",top: "113px"}}>
                     <Button variant="primary" type="submit"
                     style={{    
                         background: "#F170D3",
@@ -62,8 +56,10 @@ const signup = () => {
                         fontSize: "20px",
                         lineHeight: "23px",
                         color: "#161622"}}
-                    >SIGN UP</Button>{' '}
+                    >LOG IN</Button>{' '}
+
                     <span style={{padding:"18px"}}>OR</span>
+                    
                     <Button variant="secondary"
                     style={{    
                         background: "none",
@@ -71,17 +67,18 @@ const signup = () => {
                         fontWeight: "400",
                         fontSize: "20px",
                         color: "#161622"}}
-                    >LOG IN</Button>{' '}
+                    >SIGN UP</Button>{' '}
                     </div>
                    
 
                 </Form>
             </div>
 
-       <JoinNewsLetter />
+
+        <JoinNewsLetter />
         <Footer />
         </>
     );
 }
 
-export default signup;
+export default login;

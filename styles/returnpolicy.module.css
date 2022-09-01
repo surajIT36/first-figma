@@ -1,0 +1,13 @@
+
+.containerBody{
+    padding: 28px;
+    font-family: 'Poppins';
+}
+.paragraph {
+    width: 349px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    line-height: 22px;
+    padding-top: 7px;
+}

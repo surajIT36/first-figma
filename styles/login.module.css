@@ -4,17 +4,18 @@
     font-family: 'Poppins';
     height: 1px;
     padding: 17px;
-    padding-bottom: 38px;
+    padding-bottom: 70px;
     color: #B6B6B6;
     position: relative;
     left: 41px;
+
 }
 
 .placeholder{
 border: none;
 position: relative;
 left: -30px;
-top: 10px;
+top: 40px;
 font-weight: 700;
 width: 300px;
 }
