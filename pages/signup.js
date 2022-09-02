@@ -4,8 +4,10 @@ import styles from '../styles/signup.module.css';
 import Button from 'react-bootstrap/Button';
 import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer';
+import { useRouter } from 'next/router';
 
 const signup = () => {
+    const Router = useRouter();
     return(
         <>
         <Signupheader />
@@ -64,7 +66,7 @@ const signup = () => {
                         color: "#161622"}}
                     >SIGN UP</Button>{' '}
                     <span style={{padding:"18px"}}>OR</span>
-                    <Button variant="secondary"
+                    <Button variant="secondary" onClick={() => Router.push('/login')}
                     style={{    
                         background: "none",
                         border: "none",

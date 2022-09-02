@@ -5,8 +5,10 @@ import Form from 'react-bootstrap/Form';
 import styles from '../styles/login.module.css';
 import Button from 'react-bootstrap/Button';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const login = () => {
+    const Router = useRouter();
     return(
         <>
         <Loginheader />
@@ -33,7 +35,7 @@ const login = () => {
                     <div>
                         <ul>
                             <li style={{listStyle:"none"}}>
-                                <Link href="/forgetPassword">
+                                <Link href="/forgotpassword">
                                     <a 
                                     style={{textDecoration:"none",fontFamily:'Poppins',color:"#F170D3",
                                     fontWeight:700,fontSize:"19px",lineHeight:"16px",position:"absolute",
@@ -60,7 +62,7 @@ const login = () => {
 
                     <span style={{padding:"18px"}}>OR</span>
                     
-                    <Button variant="secondary"
+                    <Button variant="secondary" onClick={()=>Router.push('/signup')}
                     style={{    
                         background: "none",
                         border: "none",

@@ -4,18 +4,20 @@ import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { useRouter } from 'next/router';
 
 
 const forgotpassword = () => {
+    const Router = useRouter();
     return(
         <>
         <NavBar />
         <div className={styles.container}>
-            <h2 className={styles.containerHeading}>Forgot Password</h2>
-                <h3 className={styles.containerpara}>
-                    Dont't worry,<br /> reset your password
-                </h3>
-        </div>
+                <div className={styles.containerHeading}>
+                    <h2 style={{fontSize: "24px"}}>Forgot Password</h2>
+                    <h3 style={{fontSize: "20px"}}>Don't worry,<br /> reset ypur password</h3>
+                </div>
+            </div>
     
         <div style={{fontFamily: 'Poppins',position:"relative",width:"428px"}}>
                 <Form>
@@ -31,7 +33,7 @@ const forgotpassword = () => {
                     <p className='text-center' style={{padding:"30px",margin:"0",fontWeight:"400",fontSize:"19px",color:"#161622"}}><a>Back to sign in</a></p>
                     
                     <div className="d-grid gap-2"style={{width:"428px"}}>
-                        <Button variant="primary" size="lg" type="submit"
+                        <Button variant="primary" size="lg" type="submit" onClick={()=>Router.push('/passwordverificationcode')}
                         style={{
                             background: "#F170D3",
                             color: "#161622",
@@ -51,7 +53,7 @@ const forgotpassword = () => {
                 <p className='text-center' style={{fontWeight:"400",fontSize:"19px",color:"#161622"}} >Don’t have an account?</p>
 
                 <div className="d-grid gap-2"style={{width:"428px",paddingBottom:"30px"}}>
-                        <Button variant="primary" size="lg" type="submit"
+                        <Button variant="primary" size="lg" type="submit" onClick={() => Router.push('/signup')}
                         style={{
                             background: "white",
                             color: "#161622",
