@@ -1,17 +1,56 @@
-// import Image from 'next/image'
+import Figure from 'react-bootstrap/Figure';
 import styles from "../styles/bestcategories.module.css";
-
+const imgData= [
+    {
+        id: 1,
+        src: '/cat-img-1.png',
+        caption: 'Women'
+    },
+    {
+        id: 2,
+        src: '/cat-img-2.png',
+        caption: 'Men'
+    },
+    {
+        id: 3,
+        src: '/cat-img-3.png',
+        caption: 'Groups'
+    }
+]
 const bestCategories = () => {
     return(
         <>
-            <div style={{width:"428px"}}>
-                <div>
-                    <h3 className="text-center">Best Categories</h3>
-                    <div className={styles.img1}>
-                        <h4>Women</h4>
-                    </div>
-                    <div className={styles.img2} >Men</div>
-                    <div className={styles.img3} >Groups</div>
+            <div style={{ width: "428px" }}>
+                <div style={{fontFamily:'Poppins'}} className='text-center'>
+                    <h3 className="text-center" style={{paddingTop:"45px",fontWeight:"700",fontSize:"20px"}}>Best Categories</h3>
+                    {imgData.map((x,_id) => {
+                        return(
+                            <>
+                                <div>
+                                    <Figure style={{
+                                        margin:"0px",
+                                        position:"relative",
+                                        top:"20px"
+                                    }}>
+                                        <Figure.Image
+                                            width={171}
+                                            height={171}
+                                            alt="171x180"
+                                            src={x.src}
+                                        />
+                                        <Figure.Caption style={{
+                                            fontWeight: "400",
+                                            fontSize: "16px",
+                                            position: "relative",
+                                            top: "-32px",
+                                            fontFamily:'Poppins'
+                                        }}>{x.caption}</Figure.Caption>
+                                    </Figure>
+                                </div>
+                            </>
+                        )
+                    })}
+                    
                 </div>
             </div>
         
