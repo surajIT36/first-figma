@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useRouter } from 'next/router';
 
-const forgotpassword = () => {
+const passwordverification = () => {
     const Router = useRouter();
     const digitValidate = (x) => {
         x.target.value = x.value.replace(/[^0-9]/g, '');
@@ -56,4 +56,4 @@ const forgotpassword = () => {
     );
 }
 
-export default forgotpassword;
+export default passwordverification;

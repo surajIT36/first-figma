@@ -1,6 +1,6 @@
 import styles from '../styles/SliderPage.module.css';
 import Carousel from 'react-bootstrap/Carousel';
-import Footer from './footer';
+
 
 const slider = () => {
     return(
@@ -26,8 +26,6 @@ const slider = () => {
                     
                 </Carousel>
         </div>
-
-        <Footer />
         </>
     );
 };
