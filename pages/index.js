@@ -3,6 +3,7 @@ import NavBar from '../components/Navbar';
 import Slider from '../components/slider';
 import BestCategories from '../components/bestcategories';
 import TshirtsPage from '../components/tshirtsPage';
+import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Slider />
       <BestCategories />
       <TshirtsPage />
+      <JoinNewsLetter />
       <Footer />
 
 

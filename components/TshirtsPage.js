@@ -33,7 +33,7 @@ const Tshirts = () => {
                     top: "15px",
                     left: "34px",
                     paddingBottom: "20px" }}>
-                    <p style={{ fontWeight: "700", fontSize: "32px", border: "7px solid #F170D3" }}>FOR HIM <span><img src='/arrow-up-2.png' /></span> </p>
+                    <p style={{ fontWeight: "700", fontSize: "32px", border: "7px solid #F170D3" }}>FOR HIM  </p>
                 </div>
 
                 <div className='text-center'>
@@ -41,7 +41,7 @@ const Tshirts = () => {
                 </div>
 
                 <div className={styles.forher}>
-                    <p style={{ fontWeight: "700", fontSize: "32px"}}>FOR HER</p>
+                    <p style={{ fontWeight: "700", fontSize: "32px"}}>FOR HER <span style={{left:"20px",position:"relative"}}><img src='/arrow-up-2.png' /></span></p>
                 </div>
 
                 <div className='text-center'>
@@ -53,11 +53,15 @@ const Tshirts = () => {
                     return(
                         <>
                             <div key={_id} style={{display:"flex",justifyContent:"center",padding:"20px"}}>
-                                <Card style={{ width: '18rem' }} className={styles.tContainer}>
+                                <Card className={styles.tContainer}>
                                     <Card.Img variant="top" src={x.src} />
                                     <Card.Body style={{margin:"10px"}}>
                                         <Card.Title style={{position:"relative",top: "-18px",fontWeight:"400",fontSize:"28px"}} >{x.caption}</Card.Title>
                                         <Card.Text className={styles.description}>{x.dec}</Card.Text>
+                                        <p style={{
+                                            position: "relative",top: "-37px",fontWeight:"500",fontSize:"18px"}}>
+                                                ₹ {x.amount} <span style={{color: "#919191", position:"relative",left:"12px"}}><del> ₹ {x.amount}</del></span>
+                                        </p>
                                     </Card.Body>
                                 </Card>
                             </div>
