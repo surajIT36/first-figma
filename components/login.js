@@ -62,14 +62,19 @@ const login = () => {
 
                     <span style={{padding:"18px"}}>OR</span>
                     
-                    <Button variant="secondary" onClick={()=>Router.push('/signup')}
-                    style={{    
-                        background: "none",
-                        border: "none",
-                        fontWeight: "400",
-                        fontSize: "20px",
-                        color: "#161622"}}
-                    >SIGN UP</Button>{' '}
+                    <Link href="/signup">
+                            <a
+                                style={{
+                                    textDecoration: "none",
+                                    fontFamily: "Poppins",
+                                    color: "#161622",
+                                    fontWeight: "400",
+                                    fontSize: "20px",
+                                    textAlign: "center",
+                                    borderRadius: "10px",
+                                    color: "#161622"
+                                }}> SIGN UP</a>
+                        </Link>
                     </div>
                    
 

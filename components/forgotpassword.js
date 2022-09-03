@@ -4,12 +4,10 @@ import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 
 const forgotpassword = () => {
-    const Router = useRouter();
     return (
         <>
         <NavBar />
@@ -60,19 +58,24 @@ const forgotpassword = () => {
                 <p className='text-center' style={{fontWeight:"400",fontSize:"19px",color:"#161622"}} >Don’t have an account?</p>
 
                 <div className="d-grid gap-2"style={{width:"428px",paddingBottom:"30px"}}>
-                        <Button variant="primary" size="lg" type="submit" onClick={() => Router.push('/signup')}
-                        style={{
-                            background: "white",
-                            color: "#161622",
-                            border: "1px solid #000000",
-                            width: "300px",
-                            padding: "1px",
-                            margin: "auto",
-                            fontSize: "20px",
-                            fontWeight: "500"
-                        }}>
-                            Sign Up
-                        </Button>
+                        <Link href="/signup">
+                            <a
+                                style={{
+                                    textDecoration: "none",
+                                    fontFamily: "Poppins",
+                                    color: "#161622",
+                                    background: "#F170D3",
+                                    fontWeight: "500",
+                                    fontSize: "20px",
+                                    textAlign: "center",
+                                    borderRadius: "10px",
+                                    background: "white",
+                                    border: "1px solid #000000",
+                                    width: "300px",
+                                    padding: "1px",
+                                    margin: "auto",
+                                }}> Sign Up</a>
+                        </Link>
                     </div>
 
 

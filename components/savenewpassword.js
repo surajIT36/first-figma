@@ -3,11 +3,9 @@ import styles from '../styles/savenewpassword.module.css';
 import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const savepassword = () => {
-    const Router = useRouter();
     return(
         <>
         <NavBar />
@@ -39,19 +37,23 @@ const savepassword = () => {
                     
                     
                     <div className="d-grid gap-2"style={{paddingBottom: "33px",paddingTop: "78px"}}>
-                        <Button variant="primary" size="lg" type="submit" onClick={()=>Router.push('/login')}
-                        style={{
-                            background: "#F170D3",
-                            color: "#161622",
-                            border: "none",
-                            width: "300px",
-                            padding: "1px",
-                            margin: "auto",
-                            fontSize: "20px",
-                            fontWeight: "500"
-                        }}>
-                            Save
-                        </Button>
+                       
+                        <Link href="/login">
+                            <a
+                                style={{
+                                    textDecoration: "none",
+                                    fontFamily: "Poppins",
+                                    color: "#161622",
+                                    background: "#F170D3",
+                                    fontWeight: "500",
+                                    fontSize: "20px",
+                                    textAlign: "center",
+                                    borderRadius: "10px",
+                                    margin: "auto",
+                                    width: "300px",
+                                    padding: "1px",
+                                }}> Save</a>
+                        </Link>
                     </div>
                 </Form>
             </div>

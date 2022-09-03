@@ -3,11 +3,10 @@ import styles from '../styles/passwordverificationcode.module.css';
 import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer';
 import Form from 'react-bootstrap/Form';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const passwordverification = () => {
-    const Router = useRouter();
+    
     const digitValidate = (x) => {
         x.target.value = x.value.replace(/[^0-9]/g, '');
     }

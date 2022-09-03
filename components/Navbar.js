@@ -17,8 +17,8 @@ const NavBar = () => {
               
                 src='/vector1.png'
                 alt="Picture of the author"
-                width="auto"
-                height="suto"
+                width="17"
+                height="17"
               />
               <Image
              
