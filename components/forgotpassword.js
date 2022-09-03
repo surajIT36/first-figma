@@ -5,11 +5,12 @@ import Footer from '../components/footer';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 
 const forgotpassword = () => {
     const Router = useRouter();
-    return(
+    return (
         <>
         <NavBar />
         <div className={styles.container}>
@@ -30,22 +31,28 @@ const forgotpassword = () => {
                         
                     </div>
 
-                    <p className='text-center' style={{padding:"30px",margin:"0",fontWeight:"400",fontSize:"19px",color:"#161622"}}><a>Back to sign in</a></p>
-                    
-                    <div className="d-grid gap-2"style={{width:"428px"}}>
-                        <Button variant="primary" size="lg" type="submit" onClick={()=>Router.push('/passwordverificationcode')}
-                        style={{
-                            background: "#F170D3",
+                    <p className='text-center' style={{ padding: "30px", margin: "0", fontWeight: "400", fontSize: "19px", color: "#161622" }}>
+                        <Link href="/login"><a style={{
+                            textDecoration: "none",
+                            fontFamily: "Poppins",
                             color: "#161622",
-                            border: "none",
-                            width: "300px",
-                            padding: "1px",
-                            margin: "auto",
-                            fontSize: "20px",
-                            fontWeight: "500"
                         }}>
-                            Send Code
-                        </Button>
+                            Back to sign in</a></Link></p>
+                    
+                    <div className="d-grid gap-2"style={{width:"428px",padding: "30px"}} >
+                        <Link href="/passwordverificationcode">
+                            <a
+                                style={{
+                                    textDecoration: "none",
+                                    fontFamily: "Poppins",
+                                    color: "#161622",
+                                    background: "#F170D3",
+                                    fontWeight: "500",
+                                    fontSize: "20px",
+                                    textAlign: "center",
+                                    borderRadius: "10px",
+                                }}> Send Code</a>
+                        </Link>
                     </div>
                 </Form>
 
@@ -69,7 +76,7 @@ const forgotpassword = () => {
                     </div>
 
 
-            </div>
+            </div >
 
 
         <JoinNewsLetter />

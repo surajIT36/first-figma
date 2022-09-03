@@ -2,7 +2,7 @@ import NavBar from '../components/Navbar';
 import styles from '../styles/blog.module.css';
 import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer';
-import Button from 'react-bootstrap/Button';
+import Link from 'next/link';
 
 
 const helpandsupport = () => {
@@ -19,8 +19,8 @@ const helpandsupport = () => {
                         <p>The point of using Lorem Ipsum
                             is that it has amore-or-less no
                             rmal distribution of letters, as
-                            opposed to using 'Content
-                            here, content here', making it
+                            opposed to using Content
+                            here, content here making it
                             look like readable English.
                         </p>
                     </div>
@@ -37,25 +37,22 @@ const helpandsupport = () => {
                             The point of using Lorem Ipsum
                             is that it has amore-or-less no
                             rmal distribution of letters, as
-                            opposed to using 'Content
-                            here, content here', making it
+                            opposed to using Content
+                            here, content here making it
                             look like readable English.</p>
-                    <Button variant="primary" type="submit"
-                    style={{   
-                        fontFamily: 'Poppins',  
-                        background: "#F170D3",
-                        border: "none",
-                        width: "108px",
-                        borderRadius: "5px",
-                        height: "28px",     
-                        fontWeight: "500",
-                        fontSize: "15px",
-                        lineHeight: "12px",
-                        color: "#161622"}}
-                    >Read More</Button>{' '}
-                    
-
-                
+                    <Link href="/blog/blogdetails">
+                        <a
+                        style={{   
+                            fontFamily: "Poppins",
+                            background: "rgb(241, 112, 211)",
+                            borderRadius: "5px",
+                            fontWeight: "500",
+                            fontSize: "15px",
+                            color: "rgb(22, 22, 34)",
+                            padding: "7px",
+                            textDecoration: "none"}}
+                        >Read More</a>
+                    </Link>
             </div>
         </div>
 

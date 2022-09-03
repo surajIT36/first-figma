@@ -1,9 +1,10 @@
-import SaveNewPassword from '../components/savenewpassword';
+
+import Helpandsupport from '../../components/helpandsupport';
 
 const index = () => {
     return(
         <>
-        <SaveNewPassword />
+        <Helpandsupport/>
         </>
     );
 }

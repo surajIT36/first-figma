@@ -1,9 +1,9 @@
-import SaveNewPassword from '../components/savenewpassword';
+import Notification from '../../components/notification';
 
 const index = () => {
     return(
         <>
-        <SaveNewPassword />
+        <Notification />
         </>
     );
 }

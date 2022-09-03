@@ -1,9 +1,9 @@
-import SaveNewPassword from '../components/savenewpassword';
+import TshirtPage from '../../components/tshirtsPage';
 
 const index = () => {
     return(
         <>
-        <SaveNewPassword />
+        <TshirtPage  />
         </>
     );
 }
