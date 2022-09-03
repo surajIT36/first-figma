@@ -12,7 +12,7 @@ const signupOtp = () => {
         <>
             <Signupheader />
             <div className={styles.signupContainer}>
-               
+               <div style={{position:"relative",left:"-150px"}}>
                 <Image className={styles.rightArrow}
                     src={RightArrow}
                     alt="Picture of the author"
@@ -21,6 +21,7 @@ const signupOtp = () => {
                         display: "block", padding: "11px 16px"
                     }}
                 />
+                </div>
                 <p className={styles.otpTitle} style={{
                     display: "inline-block",
                     width: "297px", fontFamily: 'Poppins',
