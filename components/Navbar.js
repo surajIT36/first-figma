@@ -2,6 +2,7 @@ import styles from '../styles/NavBar.module.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'next/image'
 
 const NavBar = () => {
   return (
@@ -11,8 +12,22 @@ const NavBar = () => {
         <Col style={{padding:"0px"}}>
           <div className={styles.navContainer}>
               <span className={styles.heading}>SELF<span style={{ color: "#000000" }}>MADE</span></span>
-              <img src='/vector1.png' />
-              <img src='/more.png' style={{position:"absolute",top:"9px",left:"153px"}} />
+    
+              <Image
+              
+                src='/vector1.png'
+                alt="Picture of the author"
+                width="auto"
+                height="suto"
+              />
+              <Image
+             
+                src='/more.png'
+                alt="Picture of the author"
+                width={17}
+                height={17}
+                style={{ position: "absolute", top: "9px", left: "153px" }}
+              />
           </div>
         </Col>
       </Row>

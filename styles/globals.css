@@ -35,3 +35,13 @@ a {
   border-radius: 0 !important;
   border: 1px solid #000000 !important;
 }
+
+.offcanvas-header .btn-close {
+  position: relative !important;
+    right: 35px !important;
+    top:-64px !important;
+}
+
+.btn-close {
+  opacity: 1 !important;
+}

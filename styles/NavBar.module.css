@@ -4,11 +4,28 @@
 }
 
 .heading {
-    padding: 8px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
     color: #F170D3;
+}
+
+.navBar{
+    width: 212px !important;
+    height: 185px !important;
+    position: relative !important;
+}
+
+.navBar :before{
+    content: '';
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 153px;
+    background-color: #20C6C6;
+    border-radius: 1% 1% 169% 168%/0 0 55% 48%;
+    transform: scale(x);
 }
