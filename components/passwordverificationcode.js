@@ -28,7 +28,7 @@ const passwordverification = () => {
                     <input className={styles.otp} type="text" />
                     <input className={styles.otp} type="text" />
 
-                    <p style={{fontWeight:"400",fontSize:"20px"}}>if you didn't receive a code! <br /> <a><strong>Resend</strong></a> </p>
+                    <p style={{fontWeight:"400",fontSize:"20px"}}>if you didn t receive a code! <br /> <a><strong>Resend</strong></a> </p>
 
 
                     <div className="d-grid mt-5 mb-5" style={{padding:"30px"}}>
