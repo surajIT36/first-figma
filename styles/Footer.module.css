@@ -11,6 +11,7 @@
     font-weight: 700;
     font-size: 36px;
     color: #F170D3;
+    display: flex;
 }
 .footerLink{ 
     font-size: 16px;

@@ -5,6 +5,7 @@ import Facebook from '../public/facebook-1.png';
 import Instagram from '../public/instagram.jpeg';
 import twitter from '../public/twitter.jpeg';
 import playstore from '../public/google-play-badge-1.png';
+import vector from '../public/Vector.png';
 
 const footer = () => {
     return (
@@ -12,7 +13,13 @@ const footer = () => {
             <footer className={styles.footer}>
                 <div className={styles.heading}>
                     <span style={{ position: "relative", left: "25px" }}>SELF<span style={{ color: "#000000" }}>MADE</span></span>
-                    <img src='/Vector.png' style={{ position: "relative", right: "-43px", top: "-2px" }} />
+                    <div style={{display:"block",position:"relative",left:"50px",top:"4px",width:"38px"}}>
+                        <Image
+                            src={vector}
+                            alt="Picture of the author"
+                        />
+                    </div>
+
                 </div>
 
                 <div className={styles.footerHeading}>
@@ -58,35 +65,32 @@ const footer = () => {
 
                 <div className={styles.footerIcon} style={{ height: "280px" }}>
                     <div className='text-center'>
-                        <Image 
+                        <Image
                             src={playstore}
-                            alt="Picture of the author"
-                            style={{ width: "256px", height: "256px", position: "relative", top: "-57px", left: "35px" }}
-                        />
-                    </div>
-                    
-                    <div style={{display:"flex",justifyContent:"center",position:"relative",top: "-80px"}}>
-                    <div style={{width:"64px",padding:"12px"}}>
-                        <Image 
-                            src={Facebook}
                             alt="Picture of the author"
                         />
                     </div>
 
-                    <div style={{width:"64px",padding:"12px"}}>
-                        <Image 
-                            src={Instagram}
-                            alt="Picture of the author"
-                            style={{ width: "64px", borderRadius: "24%" }}
-                        />
-                    </div>
-                    <div style={{width:"64px",padding:"12px"}}>
-                        <Image 
-                            src={twitter}
-                            alt="Picture of the author"
-                            style={{ width: "64px", borderRadius: "24%" }}
-                        />
-                    </div>
+                    <div style={{ display: "flex", justifyContent: "center", position: "relative", top: "-80px" }}>
+                        <div style={{ width: "64px", padding: "12px" }}>
+                            <Image
+                                src={Facebook}
+                                alt="Picture of the author"
+                            />
+                        </div>
+
+                        <div style={{ width: "64px", padding: "12px" }}>
+                            <Image
+                                src={Instagram}
+                                alt="Picture of the author"
+                            />
+                        </div>
+                        <div style={{ width: "64px", padding: "12px" }}>
+                            <Image
+                                src={twitter}
+                                alt="Picture of the author"
+                            />
+                        </div>
                     </div>
 
                 </div>
