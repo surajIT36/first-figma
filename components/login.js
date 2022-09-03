@@ -5,10 +5,10 @@ import Form from 'react-bootstrap/Form';
 import styles from '../styles/login.module.css';
 import Button from 'react-bootstrap/Button';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+
 
 const login = () => {
-    const Router = useRouter();
+    
     return(
         <>
         <Loginheader />

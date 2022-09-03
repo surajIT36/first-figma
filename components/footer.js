@@ -49,7 +49,7 @@ const footer = () => {
                         using Lorem Ipsum is that it has a
                         more-or-less normal distribution
                         of letters, as opposed to using
-                        'Content here, content here', m
+                        Content here, content here, m
                         aking it look like readable English.
                     </p>
                 </div>

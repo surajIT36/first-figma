@@ -25,8 +25,8 @@ const blogdetails = () => {
                             The point of using Lorem Ipsum
                             is that it has amore-or-less no
                             rmal distribution of letters, as
-                            opposed to using 'Content
-                            here, content here', making it
+                            opposed to using Content
+                            here, content here, making it
                             look like readable English.
                         </p>
 
@@ -34,8 +34,8 @@ const blogdetails = () => {
                             The point of using Lorem Ipsum
                             is that it has amore-or-less no
                             rmal distribution of letters, as
-                            opposed to using 'Content
-                            here, content here', making it
+                            opposed to using Content
+                            here, content here, making it
                             look like readable English.
                         </p>
                         <p style={{color:"#F170D3",fontWeight: "500"}}>Shubham</p>  

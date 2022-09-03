@@ -14,7 +14,7 @@ const forgotpassword = () => {
         <div className={styles.container}>
                 <div className={styles.containerHeading}>
                     <h2 style={{fontSize: "24px"}}>Forgot Password</h2>
-                    <h3 style={{fontSize: "20px"}}>Don't worry,<br /> reset ypur password</h3>
+                    <h3 style={{fontSize: "20px"}}>Don t worry,<br /> reset ypur password</h3>
                 </div>
             </div>
     
