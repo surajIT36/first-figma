@@ -50,7 +50,7 @@ const faqPage = () => {
             <Navbar />
 
             <div style={{ width: "428px", fontFamily: "Poppins",paddingBottom:"50px"}}>
-                <h2 className={styles.heading}>FAQ's</h2>
+                <h2 className={styles.heading}>FAQ</h2>
                 {
                     fac.map((x, _id) => {
                         const [show, setShow] = useState(false);
