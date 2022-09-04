@@ -34,22 +34,17 @@
 }
 
 .buttonVerifyCode {
-    font-family: 'Poppins';
-    font-style: normal;
+    font-family: 'Poppins'; 
     font-weight: 700;
     font-size: 16px;
-    line-height: 24px;
-    text-align: center;
     color: #161622;
     position: relative;
-    width: 146px;
-    /* margin: 4px; */
-    height: 36px;
-    /* left: 38px; */
-    top: 109px;
+    width: 128px;
+    height: 29px;
+    left: 40px;
+    top: 106px;
     background: #AFEEEE;
     border-radius: 10px;
-    border: none;
 }
 
 .footer{

@@ -1,11 +1,11 @@
 import Signupheader from '../components/signupheader';
 import styles from '../styles/signupOtpPage.module.css';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer';
 import Image from 'next/image';
 import RightArrow from '../public/right-arrow.png';
+import Link from 'next/link';
 
 const signupOtp = () => {
     return (
@@ -43,7 +43,13 @@ const signupOtp = () => {
                         aria-describedby="passwordHelpBlock"
                         style={{ boxShadow: "none", position: "relative", left: "-12px" }}
                     />
-                    <Button variant="primary" className={styles.buttonVerifyCode}>Verify Code</Button>{' '}
+                    
+                    <Link href="/login">
+                            <a className={styles.buttonVerifyCode}
+                                style={{
+                                    textDecoration: "none",
+                                }}>Verify code</a>
+                        </Link>
                     <p className={styles.footer}>Didn t  get OTP? Resend</p>
                 </div>
 

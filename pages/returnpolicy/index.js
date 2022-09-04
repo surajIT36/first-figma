@@ -1,4 +1,3 @@
-returnpolicy
 import Returnpolicy from '../../components/returnpolicy';
 
 const index = () => {

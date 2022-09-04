@@ -5,8 +5,8 @@ import Carousel from 'react-bootstrap/Carousel';
 const slider = () => {
     return(
         <>
-        <div className={styles.sliderContainer}> 
-                <Carousel>
+        <div className={styles.sliderContainer}>  
+                 <Carousel>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
@@ -22,10 +22,10 @@ const slider = () => {
                                 <h4 className={styles.offer}>Get 10% off on online payment</h4>
                             </div>
                         </Carousel.Caption>
-                    </Carousel.Item>
-                    
-                </Carousel>
-        </div>
+                    </Carousel.Item>    
+                </Carousel> 
+                
+         </div>
         </>
     );
 };

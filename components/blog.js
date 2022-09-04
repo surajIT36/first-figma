@@ -26,7 +26,6 @@ const helpandsupport = () => {
                     </div>
 
                    
-
                     <h4 style={{position:"relative",top:"12px",fontWeight: "700",fontSize: "16px",
                     lineHeight: "24px",color: "#000000"}}
                     >The point of using Lorem Ipsum is that it has amore-or-less normal.

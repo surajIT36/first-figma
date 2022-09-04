@@ -12,20 +12,25 @@
     color: #F170D3;
 }
 
-.navBar{
-    width: 212px !important;
-    height: 185px !important;
-    position: relative !important;
+.offcanvasHeader {
+    /* background: red; */
+    height: 110px;
+    width: 100%;
+    padding: 23px;
+    position: relative;
+    top: -30px;
 }
 
-.navBar :before{
-    content: '';
-    top: 0;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 153px;
-    background-color: #20C6C6;
-    border-radius: 1% 1% 169% 168%/0 0 55% 48%;
-    transform: scale(x);
+.sideLink {
+    text-decoration: none;
+    color: #161622;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.sideLinks {
+    text-decoration: none;
+    color: #161622;
+    font-weight: 400;
+    font-size: 20px;
 }

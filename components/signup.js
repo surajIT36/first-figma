@@ -1,7 +1,6 @@
 import Signupheader from '../components/signupheader';
 import Form from 'react-bootstrap/Form';
 import styles from '../styles/signup.module.css';
-import Button from 'react-bootstrap/Button';
 import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer';
 import Link from 'next/link';
@@ -52,18 +51,22 @@ const signup = () => {
                     </div>
 
                     <div style={{textAlign:"center",fontFamily: "Poppins",height:"69px",position:"relative",top: "-9px"}}>
-                    <Button variant="primary" type="submit"
-                    style={{    
-                        background: "#F170D3",
-                        border: "none",
-                        width: "133px",
-                        borderRadius: "10px",
-                        height: "34px",     
-                        fontWeight: "500",
-                        fontSize: "20px",
-                        lineHeight: "23px",
-                        color: "#161622"}}
-                    >SIGN UP</Button>{' '}
+                    
+                    <Link href="/signupOtpPage">
+                            <a
+                                style={{
+                                    background: "#F170D3",
+                                    height: "34px",
+                                    width: "133px",
+                                    textDecoration: "none",
+                                    fontFamily: "Poppins",
+                                    color: "#161622",
+                                    fontWeight: "500",
+                                    fontSize: "20px",
+                                    textAlign: "center",
+                                    borderRadius: "10px",
+                                }}>SIGN UP</a>
+                        </Link>
                     <span style={{padding:"18px"}}>OR</span>
                     <Link href="/login">
                             <a

@@ -37,11 +37,18 @@ a {
 }
 
 .offcanvas-header .btn-close {
-  position: relative !important;
     right: 35px !important;
     top:-64px !important;
 }
 
 .btn-close {
   opacity: 1 !important;
+}
+
+.swiper-pagination-bullet{
+  display: none !important;
+}
+
+.offcanvas-backdrop{
+  width: 0px !important;
 }
