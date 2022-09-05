@@ -1,0 +1,18 @@
+.bgcard{
+position: relative;
+width: 232px;
+height: 367px;
+top: 30px;
+left: 66px;
+background: #F170D3;
+}
+
+.frontcard{
+    width: 239px;
+    height: 351px;
+    left: 25px;
+    background: #F2F2F2;
+    position: relative;
+    bottom: 31px;
+    padding: 22p;
+}
