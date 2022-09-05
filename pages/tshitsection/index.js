@@ -1,10 +1,10 @@
-import TshirtSection from '../../components/tshirtsPage';
+import Tshirt from '../../components/tshirtspage';
 
 
 const index = () => {
     return (
         <>
-            <TshirtSection />
+            <Tshirt />
           
         </>
     );
