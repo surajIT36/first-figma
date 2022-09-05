@@ -11,7 +11,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Link from 'next/link';
 
-const index = () => {
+  const index = () => {
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -60,8 +61,6 @@ const index = () => {
               </Col>
             </Row>
 
-
-
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body style={{ backgroundColor: "#AFEEEE" }}>
@@ -69,7 +68,7 @@ const index = () => {
           <div>
             <ul style={{ listStyleType: "none", fontFamily: "Poppins", }}>
               <li>
-                <Link href="/">
+                <Link href="/search">
                   <a className={styles.sideLink}>Search</a>
                 </Link>
               </li>
@@ -79,17 +78,17 @@ const index = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/blog/hello-world">
+                <Link href="/help">
                   <a className={styles.sideLink}>Help</a>
                 </Link>
               </li>
               <li>
-                <Link href="/blog/hello-world">
+                <Link href="/cart">
                   <a className={styles.sideLink}>Cart</a>
                 </Link>
               </li>
               <li>
-                <Link href="/">
+                <Link href="/home">
                   <a className={styles.sideLinks}>Home</a>
                 </Link>
               </li>
@@ -132,9 +131,6 @@ const index = () => {
           </div>
         </Offcanvas.Body>
       </Offcanvas>
-
-
-
 
     </>
   );
