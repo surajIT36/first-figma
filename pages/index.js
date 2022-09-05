@@ -3,7 +3,7 @@ import NavBar from '../components/Navbar';
 import Slider from '../components/slider';
 import BestCategories from '../components/bestcategories';
 import Topselling from '../components/topselling';
-import Tshirt from '../components/tshirtspage';
+import Tshirt from '../components/thirt';
 import JoinNewsLetter from '../components/joinnewsLetter';
 import Footer from '../components/footer'
 

@@ -1,4 +1,4 @@
-import Tshirt from '../../components/tshirtspage';
+import Tshirt from '../../components/thirt';
 
 
 const index = () => {
