@@ -11,7 +11,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Link from 'next/link';
 
-  const index = () => {
+  const Index = () => {
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -136,4 +136,4 @@ import Link from 'next/link';
   );
 }
 
-export default index;
+export default Index;
