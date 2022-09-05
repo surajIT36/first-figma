@@ -28,22 +28,22 @@ const footer = () => {
                         <div>
                             <Nav.Link href="/home" className={styles.footerLink}>Contact Us</Nav.Link>
                             <Nav.Link eventKey="link-1" className={styles.footerLink}>Track Order</Nav.Link>
-                            <Nav.Link eventKey="link-2" className={styles.footerLink}>Return Order</Nav.Link>
+                            <Nav.Link href="/returnpolicy" className={styles.footerLink}>Return Order</Nav.Link>
                             <Nav.Link eventKey="link-2" className={styles.footerLink}>Cancel Order</Nav.Link>
                         </div>
                         <h3 style={{ padding: "60px 0px 5px", fontWeight: "700" }}>COMPANY</h3>
                         <div>
-                            <Nav.Link href="/home" className={styles.footerLink}>About Us</Nav.Link>
-                            <Nav.Link eventKey="link-1" className={styles.footerLink}>We’r Hiring</Nav.Link>
-                            <Nav.Link eventKey="link-2" className={styles.footerLink}>Terms & Conditions</Nav.Link>
-                            <Nav.Link eventKey="link-2" className={styles.footerLink}>Privacy Policy</Nav.Link>
-                            <Nav.Link eventKey="link-2" className={styles.footerLink}>Blog</Nav.Link>
+                            <Nav.Link href="/about" className={styles.footerLink}>About Us</Nav.Link>
+                            <Nav.Link href="/ourpolicies" className={styles.footerLink}>Our Policy</Nav.Link>
+                            <Nav.Link href="/termsandconditions" className={styles.footerLink}>Terms & Conditions</Nav.Link>
+                            <Nav.Link href="/returnpolicy" className={styles.footerLink}>Privacy Policy</Nav.Link>
+                            <Nav.Link href="/blog" className={styles.footerLink}>Blog</Nav.Link>
                         </div>
                         <h3 style={{ padding: "60px 0px 5px", fontWeight: "700" }}>CONNECT WITH US</h3>
                         <div>
                             <Nav.Link href="/home" className={styles.footerLink}>Contact Us</Nav.Link>
                             <Nav.Link eventKey="link-1" className={styles.footerLink}>Track Order</Nav.Link>
-                            <Nav.Link eventKey="link-2" className={styles.footerLink}>Return Order</Nav.Link>
+                            <Nav.Link href="/returnpolicy" className={styles.footerLink}>Return Order</Nav.Link>
                             <Nav.Link eventKey="link-2" className={styles.footerLink}>Cancel Order</Nav.Link>
                         </div>
                     </Nav>
