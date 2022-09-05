@@ -72,10 +72,10 @@ const Tshirts = () => {
                 </Row>
                 <Row>
                     <Col>
-                        {cardImg.map((x, _id) => {
+                        {cardImg.map((x,pos) => {
                             return (
                                 <>
-                                    <div key={_id} style={{ display: "flex", justifyContent: "center", padding: "20px" }}>
+                                    <div key={pos} style={{ display: "flex", justifyContent: "center", padding: "20px" }}>
                                         <Card className={styles.tContainer}>
                                             <Card.Img variant="top" src={x.src} />
                                             <Card.Body style={{ margin: "10px" }}>

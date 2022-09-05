@@ -23,10 +23,10 @@ const bestCategories = () => {
             <div style={{ width: "428px" }}>
                 <div style={{fontFamily:'Poppins'}} className='text-center'>
                     <h3 className="text-center" style={{paddingTop:"45px",fontWeight:"700",fontSize:"20px"}}>Best Categories</h3>
-                    {imgData.map((x,_id) => {
+                    {imgData.map((x,pos) => {
                         return(
                             <>
-                                <div>
+                                <div key={pos}>
                                     <Figure style={{
                                         margin:"0px",
                                         position:"relative",
