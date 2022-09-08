@@ -7,8 +7,9 @@ import close from '../public/close.png'
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import Table from 'react-bootstrap/Table';
+import Link from 'next/link';
 
 
 const cartImg = [
@@ -84,28 +85,58 @@ const cart = () => {
                     );
                 })}
 
-               
-            <div className='d-flex' style={{
-                padding: "5px",
-                justifyContent: "space-around",
-                background: "#FFFFFF",
-                fontWeight: "400",
-                boxShadow: "0px 4px 4px rgb(0 0 0 / 25%)"
-            }}>
-                <div>
-                <p style={{fontSize:"22px"}}>Apply coupon</p>
+
+                <div className={styles.applycoupon}>
+                    <div>
+                        <p style={{ fontSize: "22px" }}>Apply coupon</p>
+                    </div>
+                    <div>
+                        <Button variant="primary" style={{
+                            background: "#FFFFFF",
+                            border: "none",
+                            color: "#F170D3",
+                            fontSize: "20px"
+                        }}>Apply</Button>
+                    </div>
                 </div>
-                <div>
-                <Button variant="primary" style={{
-                     background: "#FFFFFF",
-                     border:"none",
-                     color: "#F170D3",
-                     fontSize: "20px"
-                }}>Apply</Button>
+
+                <div style={{ marginTop: "20px", background: "white", padding: "40px", boxShadow: "0px 4px 4px rgb(0 0 0 / 25%)" }}>
+                    <div>
+                        <h2 style={{ fontSize: "24px", fontweight: "700" }}>Order Summary</h2>
+                        <div>
+                            <Table size="sm">
+                                <tbody>
+                                    <tr>
+                                        <td className={styles.orderItems}>Sub Total</td>
+                                        <td className={styles.orderAmount}>₹ 849</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td className={styles.orderItems}>Sub Total(2 items)</td>
+                                        <td className={styles.orderAmount}>₹ 849</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td className={styles.orderItems}>Total</td>
+                                        <td className={styles.orderAmount}>₹ 849</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-                    
-               
+
+                <div className="d-grid gap-2" style={{background: "#20C6C6",marginBottom:"40px",marginTop: "22px"}}>
+                    <Link href="/cart/checkoutpage"><a style={{
+                        fontWeight: "500",
+                        fontSize: "24px",
+                        textDecoration: "none",
+                        color: "#FFFFFF",
+                        textAlign: "center"
+                    }}>CHECKOUT</a></Link>
+                </div>
+
+
 
 
             </div>
