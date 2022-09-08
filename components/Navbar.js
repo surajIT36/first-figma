@@ -88,7 +88,7 @@ import Link from 'next/link';
                 </Link>
               </li>
               <li>
-                <Link href="/home">
+                <Link href="/">
                   <a className={styles.sideLinks}>Home</a>
                 </Link>
               </li>
