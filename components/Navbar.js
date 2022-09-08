@@ -19,7 +19,7 @@ import Link from 'next/link';
   return (
     <>
 
-      <Navbar style={{ background: "#AFEEEE", width: "178px", height: "34px" }}>
+      <Navbar style={{ background: "#AFEEEE", width: "178px", height: "34px",position: "absolute",zIndex: 1 }}>
         <Container>
           <Navbar.Brand style={{ display: "contents" }}>
             <div>
