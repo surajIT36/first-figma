@@ -3,6 +3,8 @@
     height: 253px;
     left: 0px;
     top: 0px;
+    position: absolute;
+    z-index: -1;
 }
 
 /* Sale of the season */
