@@ -16,3 +16,23 @@
     width: 306px;
     line-height: 33px;
 }
+
+.des {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #919191 !important;
+    margin: 0px;
+}
+
+.amount {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+}
+
+.del {
+    color: #919191;
+    position: relative;
+    left: 12px;
+}

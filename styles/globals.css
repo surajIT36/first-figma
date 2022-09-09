@@ -54,3 +54,7 @@ a {
 .offcanvas-backdrop{
   width: 0px !important;
 }
+
+.progress-bar {
+background-color: #20C6C6 !important;
+}

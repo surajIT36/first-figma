@@ -38,6 +38,7 @@ const footer = () => {
                             <Nav.Link href="/termsandconditions" className={styles.footerLink}>Terms & Conditions</Nav.Link>
                             <Nav.Link href="/returnpolicy" className={styles.footerLink}>Privacy Policy</Nav.Link>
                             <Nav.Link href="/blog" className={styles.footerLink}>Blog</Nav.Link>
+                            <Nav.Link href="/faqpage" className={styles.footerLink}>FAQ</Nav.Link>
                         </div>
                         <h3 style={{ padding: "60px 0px 5px", fontWeight: "700" }}>CONNECT WITH US</h3>
                         <div>

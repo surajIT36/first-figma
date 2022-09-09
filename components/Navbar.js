@@ -50,9 +50,9 @@ import Link from 'next/link';
 
             <Row style={{ position: "absolute", top: "88px", left: "25px" }}>
               <Col>
-                <div>
+                <div><Link href='/account'>
                   <Image src={User} alt="Picture of the author" />
-                </div>
+                  </Link></div>
               </Col>
 
               <Col style={{ lineHeight: "10px" }}>
@@ -98,7 +98,7 @@ import Link from 'next/link';
                 </Link>
               </li>
               <li>
-                <Link href="/wishlist">
+                <Link href="account/wishlist">
                   <a className={styles.sideLinks}>Wishlist</a>
                 </Link>
               </li>

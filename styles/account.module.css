@@ -1,0 +1,32 @@
+.listContainer {
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+}
+
+.listmain {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    align-items: center;
+    padding: 18px;
+    width: 220px;
+}
+
+.accountSlide {
+    position: absolute;
+    width: 244px;
+    height: 729px;
+    left: 55px;
+    top: 118px;
+    background: #F2F2F2;
+    box-shadow: 3px 1px 4px rgb(0 0 0 / 25%);
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: #161622;
+    line-height: 30px;
+}
