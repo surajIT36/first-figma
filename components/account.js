@@ -54,7 +54,7 @@ const accountList = [
   },
 ]
 
-const account = () => {
+const Account = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -189,4 +189,4 @@ const account = () => {
 }
 
 
-export default account;
+export default Account;
