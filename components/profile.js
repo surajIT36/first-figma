@@ -30,7 +30,7 @@ const profile = () => {
             <div className='text-center'>
                 <p>Enter the details</p>
                 <div>
-                    <Image src={user} />
+                    <Image src={user} alt='user profile' />
                 </div>
                 <p style={{margin:"0px"}}>Suraj Singh</p>
                 <p>ucetsuraj@gmail.com</p>

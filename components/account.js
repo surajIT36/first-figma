@@ -54,7 +54,7 @@ const accountList = [
   },
 ]
 
-const index = () => {
+const account = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -167,7 +167,7 @@ const index = () => {
               <div className={styles.listContainer}>
                 <div className={styles.listmain}>
                   <div>
-                    <Image src={x.src} width={25} height={25} />
+                    <Image src={x.src} width={25} height={25} alt='account src' />
                   </div>
                   <div style={{ paddingLeft: "20px" }}>
                     <Link href={`${x.link}`}><a style=
@@ -189,4 +189,4 @@ const index = () => {
 }
 
 
-export default index;
+export default account;
