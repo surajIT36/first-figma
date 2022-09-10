@@ -27,7 +27,7 @@ const profile = () => {
 
          <div >
             <h2 style={{fontWeight:"700",fontSize:"24px",paddingLeft:"24px"}}>Profile</h2>
-            <div className='text-center'>
+            <div className='text-center' style={{width:"428px"}}>
                 <p>Enter the details</p>
                 <div>
                     <Image src={user} alt='user profile' />
